@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Полиглот — школа иностранных языков</title>
+  <meta name="description" content="Английский, испанский, немецкий и китайский в группах до 8 человек, в паре и индивидуально. Бесплатный тест уровня и пробное занятие.">
+  <meta name="theme-color" content="#0f3d3e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230f3d3e'/%3E%3Cpath d='M8 10h12a4 4 0 0 1 4 4v3a4 4 0 0 1-4 4h-5l-5 4v-4H8z' fill='%23ff7a59'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top" aria-label="Полиглот, на главную">
+        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M8 10h12a4 4 0 0 1 4 4v3a4 4 0 0 1-4 4h-5l-5 4v-4H8z" fill="#ff7a59"/></svg>
+        <span>Полиглот</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Разделы">
+        <a href="#test">Тест уровня</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#price">Стоимость</a>
+        <a href="#teachers">Преподаватели</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <a class="btn btn-small" href="#signup">Пробное занятие</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Школа языков в центре и онлайн</p>
+          <h1>Заговорите на новом языке <em>через три месяца</em></h1>
+          <p class="lead">Группы до 8 человек, разговорная практика с первого урока и преподаватели, которые жили в стране языка. Первое занятие бесплатно.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#test">Узнать свой уровень</a>
+            <a class="btn btn-ghost" href="#schedule">Смотреть расписание</a>
+          </div>
+          <ul class="facts">
+            <li><b>11</b> лет работаем</li>
+            <li><b>2 400</b> выпускников</li>
+            <li><b>4,9</b> на Яндекс Картах</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 380">
+            <circle cx="220" cy="190" r="150" fill="#ffe3d6"/>
+            <g class="bubble b1"><rect x="40" y="60" width="150" height="70" rx="22" fill="#0f3d3e"/><path d="M70 130l-6 24 26-24z" fill="#0f3d3e"/><text x="115" y="104" text-anchor="middle">Hello!</text></g>
+            <g class="bubble b2"><rect x="230" y="40" width="160" height="70" rx="22" fill="#ff7a59"/><path d="M360 110l6 24-26-24z" fill="#ff7a59"/><text x="310" y="84" text-anchor="middle">¡Hola!</text></g>
+            <g class="bubble b3"><rect x="60" y="210" width="150" height="70" rx="22" fill="#fbf5ec" stroke="#0f3d3e" stroke-width="3"/><path d="M90 280l-6 24 26-24z" fill="#fbf5ec" stroke="#0f3d3e" stroke-width="3" stroke-linejoin="round"/><text x="135" y="254" text-anchor="middle" class="dark">Hallo!</text></g>
+            <g class="bubble b4"><rect x="240" y="190" width="140" height="70" rx="22" fill="#2f7d6d"/><path d="M350 260l6 24-26-24z" fill="#2f7d6d"/><text x="310" y="234" text-anchor="middle">你好!</text></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="langs wrap" aria-label="Языки">
+      <article class="lang"><span class="flag">EN</span><h3>Английский</h3><p>От нуля до C1, подготовка к IELTS и собеседованиям</p></article>
+      <article class="lang"><span class="flag">ES</span><h3>Испанский</h3><p>Разговорный курс и испанский для путешествий</p></article>
+      <article class="lang"><span class="flag">DE</span><h3>Немецкий</h3><p>Для учёбы и переезда, подготовка к Goethe-Zertifikat</p></article>
+      <article class="lang"><span class="flag">中</span><h3>Китайский</h3><p>Иероглифы, тоны и HSK 1–3 без зубрёжки</p></article>
+    </section>
+
+    <section class="section" id="test">
+      <div class="wrap narrow">
+        <p class="eyebrow">5 минут</p>
+        <h2>Тест уровня английского</h2>
+        <p class="muted">10 вопросов от простых к сложным. Отвечайте сразу, не раздумывая: так результат точнее.</p>
+        <div class="card quiz" id="quiz">
+          <div class="quiz-progress"><span id="quizBar"></span></div>
+          <p class="quiz-count" id="quizCount"></p>
+          <p class="quiz-q" id="quizQ"></p>
+          <div class="quiz-options" id="quizOptions" role="group" aria-label="Варианты ответа"></div>
+          <div class="quiz-nav">
+            <button class="btn btn-ghost btn-small" id="quizBack" type="button">Назад</button>
+            <button class="link" id="quizSkip" type="button">Не знаю</button>
+          </div>
+        </div>
+        <div class="card result" id="quizResult" hidden>
+          <p class="eyebrow">Ваш уровень</p>
+          <p class="level" id="resLevel"></p>
+          <p id="resText"></p>
+          <div class="hero-actions">
+            <button class="btn" id="resGroups" type="button">Подобрать группу</button>
+            <button class="btn btn-ghost" id="quizAgain" type="button">Пройти ещё раз</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="schedule">
+      <div class="wrap">
+        <p class="eyebrow">Ближайший старт</p>
+        <h2>Расписание групп</h2>
+        <form class="filters" id="filters">
+          <label>Язык
+            <select name="lang">
+              <option value="all">Все языки</option>
+              <option value="en">Английский</option>
+              <option value="es">Испанский</option>
+              <option value="de">Немецкий</option>
+              <option value="zh">Китайский</option>
+            </select>
+          </label>
+          <label>Уровень
+            <select name="level">
+              <option value="all">Любой</option>
+              <option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
+            </select>
+          </label>
+          <label>Формат
+            <select name="format">
+              <option value="all">Любой</option>
+              <option value="offline">В классе</option>
+              <option value="online">Онлайн</option>
+            </select>
+          </label>
+          <label class="check"><input type="checkbox" name="onlyFree"> Только со свободными местами</label>
+        </form>
+        <div class="groups" id="groups" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="price">
+      <div class="wrap price-grid">
+        <div>
+          <p class="eyebrow">Без скрытых платежей</p>
+          <h2>Сколько стоит</h2>
+          <p class="muted">Учебники и доступ к платформе с домашними заданиями входят в цену. Пропущенное по болезни занятие переносим.</p>
+          <ul class="ticks">
+            <li>Группа до 8 человек: 900 ₽ за занятие</li>
+            <li>В паре с другом: 1 400 ₽</li>
+            <li>Индивидуально: 2 200 ₽</li>
+            <li>Онлайн на 10% дешевле</li>
+          </ul>
+        </div>
+        <form class="card calc" id="calc">
+          <fieldset class="seg">
+            <legend>Формат</legend>
+            <label><input type="radio" name="type" value="group" checked><span>Группа</span></label>
+            <label><input type="radio" name="type" value="pair"><span>Пара</span></label>
+            <label><input type="radio" name="type" value="individual"><span>Индивидуально</span></label>
+          </fieldset>
+          <label class="range">Занятий в неделю: <b id="perWeekOut">2</b>
+            <input type="range" name="perWeek" min="1" max="5" value="2">
+          </label>
+          <fieldset class="seg">
+            <legend>Абонемент</legend>
+            <label><input type="radio" name="months" value="1" checked><span>1 месяц</span></label>
+            <label><input type="radio" name="months" value="3"><span>3 мес. −7%</span></label>
+            <label><input type="radio" name="months" value="6"><span>6 мес. −12%</span></label>
+          </fieldset>
+          <label class="check"><input type="checkbox" name="online"> Онлайн</label>
+          <div class="total">
+            <span class="muted" id="calcDetails"></span>
+            <b id="calcMonthly"></b>
+            <span class="saved" id="calcSaved"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt" id="teachers">
+      <div class="wrap">
+        <p class="eyebrow">Команда</p>
+        <h2>Преподаватели</h2>
+        <div class="teachers">
+          <article class="teacher"><span class="avatar" style="--c:#ff7a59">МО</span><h3>Мария Орлова</h3><p class="muted">Английский · CELTA, 9 лет в профессии</p><p>Готовит к IELTS, два года преподавала в Лондоне.</p></article>
+          <article class="teacher"><span class="avatar" style="--c:#2f7d6d">ДУ</span><h3>Джеймс Уилсон</h3><p class="muted">Английский · носитель из Манчестера</p><p>Ведёт разговорные клубы и бизнес-английский.</p></article>
+          <article class="teacher"><span class="avatar" style="--c:#e2a72e">ЛМ</span><h3>Лусия Мартинес</h3><p class="muted">Испанский · носитель из Валенсии</p><p>Учит говорить, а не заучивать спряжения.</p></article>
+          <article class="teacher"><span class="avatar" style="--c:#6b5bd2">ЛВ</span><h3>Ли Вэй</h3><p class="muted">Китайский · HSK 6, Пекинский университет</p><p>Объясняет тоны на песнях и скороговорках.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap narrow">
+        <h2>Частые вопросы</h2>
+        <details><summary>Что будет на пробном занятии?</summary><p>Знакомство, короткая беседа для уточнения уровня и полноценный урок в группе вашего уровня. Длится 60 минут, бесплатно и ни к чему не обязывает.</p></details>
+        <details><summary>Можно ли начать с нуля?</summary><p>Да, группы A1 стартуют каждый месяц. Ничего заранее учить не нужно.</p></details>
+        <details><summary>Что если я пропущу занятие?</summary><p>Запись урока и домашнее задание появятся на платформе. Пропуск по болезни переносим на индивидуальное занятие 30 минут.</p></details>
+        <details><summary>Выдаёте ли вы сертификат?</summary><p>После каждого уровня выдаём сертификат школы, у нас есть образовательная лицензия. Для международных экзаменов готовим отдельно.</p></details>
+      </div>
+    </section>
+
+    <section class="section signup" id="signup">
+      <div class="wrap signup-grid">
+        <div>
+          <h2>Запишитесь на пробное занятие</h2>
+          <p>Перезвоним в течение 15 минут в рабочее время, подберём группу и удобное время.</p>
+          <p class="contacts">Москва, Покровка, 17 · ежедневно 9:00–21:00<br><a href="tel:+74950000000">+7 495 000-00-00</a></p>
+        </div>
+        <form class="card lead" id="lead" novalidate>
+          <label>Имя<input name="name" autocomplete="given-name" required></label>
+          <p class="err" data-for="name"></p>
+          <label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required></label>
+          <p class="err" data-for="phone"></p>
+          <label>Язык
+            <select name="lang" required>
+              <option value="">Выберите</option>
+              <option value="en">Английский</option>
+              <option value="es">Испанский</option>
+              <option value="de">Немецкий</option>
+              <option value="zh">Китайский</option>
+            </select>
+          </label>
+          <p class="err" data-for="lang"></p>
+          <input type="hidden" name="level">
+          <label class="check"><input type="checkbox" name="agree"> Согласен на обработку персональных данных</label>
+          <p class="err" data-for="agree"></p>
+          <button class="btn wide" type="submit">Записаться</button>
+          <p class="ok" id="leadOk" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2026 Полиглот · Демонстрационный сайт · Сделал <a href="https://whysafe.ru">whysafe</a></div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
